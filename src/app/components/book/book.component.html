@@ -1,0 +1,41 @@
+<div class="product container">
+    <div class="product__container" *ngFor="let product of fiction">
+        <div class="product__img">
+            <img [src]="product.img" alt="">
+        </div>
+        <div class="product__info">
+            <h3 class="product__title">{{ product.name }}</h3>
+            <p class="product__description" [innerHTML]="product.description"></p>
+            <span class="product__available">Available</span>
+            <button class="product__button">View Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="product container">
+    <div class="product__container" *ngFor="let product of nonFiction">
+        <div class="product__img">
+            <img [src]="product.img" alt="">
+        </div>
+        <div class="product__info">
+            <h3 class="product__title">{{ product.name }}</h3>
+            <p class="product__description" [innerHTML]="product.description"></p>
+            <span class="product__available">Available</span>
+            <button class="product__button">View Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="product container">
+    <div class="product__container" *ngFor="let product of scienceFiction">
+        <div class="product__img">
+            <img [src]="product.img" alt="">
+        </div>
+        <div class="product__info">
+            <h3 class="product__title">{{ product.name }}</h3>
+            <p class="product__description" [innerHTML]="product.description"></p>
+            <span class="product__available">Available</span>
+            <button class="product__button">View Details</button>
+        </div>
+    </div>
+</div>
